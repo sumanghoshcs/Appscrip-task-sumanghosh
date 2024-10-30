@@ -1,5 +1,6 @@
 import { createContext,useState } from "react";
 import { PRODUCTS } from "../Product";
+// import {myData} from "../../component/body/data"
 
 export const ShopContext = createContext(null);
 
@@ -12,6 +13,8 @@ const getDefaultCart = () => {
 };
 
 export const ShopContextProvider = (props) => {
+
+  // console.log(myData)
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   const getTotalCartAmount = () => {

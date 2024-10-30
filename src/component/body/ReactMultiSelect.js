@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { MultiSelect } from "react-multi-select-component";
 
 const options = [
-  { label: "Grapes 🍇", value: "grapes" },
-  { label: "Mango 🥭", value: "mango" },
-  { label: "Strawberry 🍓", value: "strawberry", disabled: true },
+  { label: "Men", value: "men" },
+  { label: "Women", value: "women" },
+  { label: "All", value: "all" },
 ];
 
 const Example = () => {

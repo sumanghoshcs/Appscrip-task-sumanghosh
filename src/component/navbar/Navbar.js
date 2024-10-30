@@ -15,14 +15,14 @@ export const Navbar = () => {
         <Link to="">STORIES</Link>
         <Link to="">ABOUT</Link>
         <Link to="">CONTACT US</Link>
-        {/* <Link to="/cart">
+        <Link to="/cart">
           <ShoppingCart size={32} />
           {Object.values(cartItems).reduce((acc, item) => acc + item) > 0 && (
             <span>
               {Object.values(cartItems).reduce((acc, item) => acc + item)}
             </span>
           )}
-        </Link> */}
+        </Link>
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ import product8 from "./images/asset 26.jpeg";
 import product9 from "./images/asset 28.jpeg";
 import product10 from "./images/asset 48.jpeg";
 
+
 export const PRODUCTS = [
   {
     id: 1,

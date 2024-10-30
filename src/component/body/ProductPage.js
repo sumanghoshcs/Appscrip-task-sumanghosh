@@ -34,8 +34,9 @@ export const Product = (props) => {
       });
   }, []);
 
-  const { addToCart, cartItems } = useContext(ShopContext);
+  const { addToCart, cartItems} = useContext(ShopContext);
 
+  // console.log(cartItems)
   // Conditional rendering for when data is not an array or empty
   if (!Array.isArray(data) || data.length === 0) {
     return <p>Loading products...</p>;
@@ -60,7 +61,7 @@ export const Product = (props) => {
                 >
                   <p className="text-container">{item.title}</p>
                 </div>
-                {/* <p>${item.price}</p> */}
+                <p>${item.price}</p>
               </div>
               <div
                 style={{
@@ -74,9 +75,9 @@ export const Product = (props) => {
                 <Heart size={32} />
               </div>
 
-              {/* <button className="addToCartBtn" onClick={() => addToCart(item.id)}>
+              <button className="addToCartBtn" onClick={() => addToCart(item.id)}>
             Add To Cart {cartItems[item.id] > 0 && <> ({cartItems[item.id]})</>}
-          </button> */}
+          </button>
             </div>
           ))}
         </div>
